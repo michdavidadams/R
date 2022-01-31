@@ -1,0 +1,37 @@
+# Creating a row vector
+- numeric vector is a set of numbers
+```
+// "<" = less than
+// "-" = minus
+vector_name <- c(set of numbers)
+
+// prints vector content
+vector_name
+```
+
+# Creating a data frame
+- data frame transposes row vectors into side-by-side column vectors, like in tables or data sets
+```
+data_name <- data.frame(vector_name, vector2_name,..., vectorN_name)
+```
+
+# Define subset of a data frame
+```
+data_name[c(rowA:rowN), c(columnA:columnN)]
+```
+
+# Etc
+```
+// Raise the quantity to the 2nd power
+(value)**2
+
+// Square root
+sqrt()
+
+// Prints values nicely and rounds to 4 decimal places
+round()
+cbind()
+
+// +- in endpts1 formula
+c(-1,1)
+```
