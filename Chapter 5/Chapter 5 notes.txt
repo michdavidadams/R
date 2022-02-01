@@ -20,6 +20,26 @@ data_name <- data.frame(vector_name, vector2_name,..., vectorN_name)
 data_name[c(rowA:rowN), c(columnA:columnN)]
 ```
 
+# Boxplot
+```
+boxplot(Volume)
+
+// to make horizontal
+boxplot(Volume, horizontal=T)
+
+// dimensions
+boxplot(Volume, boxwex=1.5)
+// change staples/whiskers dimensions
+boxplot(Volume, boxwex=1.5, staplewex=.2)
+
+// change colors
+boxplot(Volume, col="blue", border="red")
+
+// change range
+boxplot(Volume, range=0)
+```
+
+
 # Etc
 ```
 // Raise the quantity to the 2nd power
@@ -34,4 +54,30 @@ cbind()
 
 // +- in endpts1 formula
 c(-1,1)
+
+// Length
+length()
+
+// min/max/mean
+min()
+max()
+mean()
+
+// Measures of Spread
+range()
+output2 - output1
+
+// standard deviation
+sd()
+
+// variance
+var()
+
+// interquartile range
+IQR()
+
+// five-number summary / summary of max/min/mean/iqr
+fivenum()
+summary()
+
 ```
