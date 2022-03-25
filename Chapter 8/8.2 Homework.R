@@ -19,8 +19,14 @@
 		high * 60	# print minutes
 	# Explain why the 99% confidence interval is wider than the 95% confidence interval.
 		# A higher confidence level has a higher critical value, which makes the margin of error larger, and the confidence interval wider.
-		
-# Two competing ski slopes in Colorado advertise their powder base each day in an effort to attract more skiers. A random sample of the powder base depth (in inches) was obtained for each ski resort on days during a recent winter. Assume  𝜎𝐵=2.5 and 𝜎𝑉=2.7. Find a 99% confidence interval for the true mean powder depth at Breckenridge Ski Resort.
-	# Find a 99% confidence interval for the true mean powder depth at Breckridge Ski Resort. Data already imported as snow
-		MeanSnow <- mean(snow)
-		StandardDeviationSnow <- (2.5 / sqrt(length(snow)))	# standard deviation
+
+# A random sample of professional wrestlers was obtained, and the annual salary (in dollars) for each was recorded. The summary statistics were sample mean 𝑥⎯⎯⎯=57500 and the sample size 𝑛=18. Assume the distribution of annual salary is normal, with the population standard  deviation 𝜎=9500.
+	# Find a 90% confidence interval for the true mean annual salary for all professional wrestlers.
+		1 - ((1 - 0.90)/2)	# z-score probability, gives us 0.95
+		qnorm(0.95)	# gives us 1.644854
+		StandardDeviationWrestlers <- (9500 / sqrt(18))	# standard deviation
+		MarginOfErrorWrestlers <- (1.644854 * StandardDeviationWrestlers)	# margin of error
+		low <- (57500 - MarginOfErrorWrestlers)	# low interval
+		high <- (57500 + MarginOfErrorWrestlers)	# high interval
+		low	# prints low interval
+		high	# prints high interval
