@@ -1,0 +1,145 @@
+source("/Users/michaeladams/Code/R/Chapter 8/ex06-004a.csv")
+weights <- read.csv("/Users/michaeladams/Code/R/Chapter 8/ex06-004a.csv")
+weights
+weight <- data.frame(id, bw0)
+weight <- data.frame(weights$id, weights$bw0)
+weight
+n <- length(weights$id)	# sample size#
+	xbar <- mean(weights$bw0)	# sample mean#
+	s <- sd(weights$bw0)	# sample standard deviation#
+	margin <- qt(0.975,df=n-1)*s/sqrt(n)	# calculate margin of error#
+	# calculate bounds#
+		low <- xbar - margin#
+		high <- xbar + margin#
+		low#
+		high
+high <- xbar + margin#
+		round(low, digits=2)#
+		round(high, digits = 2)
+source("/Users/michaeladams/Code/R/Chapter 8/chapter_08_csv/ex08-82owncar.csv")
+car <- read.csv("/Users/michaeladams/Code/R/Chapter 8/chapter_08_csv/ex08-82owncar.csv")
+car
+rename(car, NewOwnershipLength_.mo = new)
+cars <- data.frame(car)
+cars
+rename(cars, NewOwnershipLength_.mo = new)
+n <- length(car$NewOwnershipLength_.mo.)	# sample size#
+	xbar <- mean(car$NewOwnershipLength_.mo.)	# sample mean#
+	s <- sd(car$NewOwnershipLength_.mo. )	# sample standard deviation#
+	margin <- qt(0.995,df=n-1)*s/sqrt(n)	# calculate margin of error#
+	# calculate bounds#
+		low <- xbar - margin#
+		high <- xbar + margin#
+		round(low, digits=2)#
+		round(high, digits = 2)
+n <- length(car$OldOwnershipLength_.mo.)	# sample size#
+		xbar <- mean(car$OldOwnershipLength_.mo.)	# sample mean#
+		s <- sd(car$OldOwnershipLength_.mo. )	# sample standard deviation#
+		margin <- qt(0.995,df=n-1)*s/sqrt(n)	# calculate margin of error#
+		# calculate bounds#
+			low <- xbar - margin#
+			high <- xbar + margin#
+			round(low, digits=2)#
+			round(high, digits = 2)
+n <- length(car$UsedOwnershipLength_.mo.)	# sample size#
+		xbar <- mean(car$UsedOwnershipLength_.mo.)	# sample mean#
+		s <- sd(car$UsedOwnershipLength_.mo. )	# sample standard deviation#
+		margin <- qt(0.995,df=n-1)*s/sqrt(n)	# calculate margin of error#
+		# calculate bounds#
+			low <- xbar - margin#
+			high <- xbar + margin#
+			round(low, digits=2)#
+			round(high, digits = 2)#
+			# 99% confidence interval: (62.31, 97.03)
+n <- length(car$UsedOwnershipLength_.mo.)	# sample size#
+		xbar <- mean(car$UsedOwnershipLength_.mo.)	# sample mean#
+		s <- sd(car$UsedOwnershipLength_.mo. )	# sample standard deviation#
+		margin <- qt(0.995,df=n-1)*s/sqrt(n)	# calculate margin of error#
+		# calculate bounds#
+			low <- xbar - margin#
+			high <- xbar + margin#
+			round(low, digits=2)#
+			round(high, digits = 2)#
+			# 99% confidence interval: (62.31, 97.03)
+n <- length(car$UsedOwnershipLength_.mo.)	# sample size#
+		xbar <- mean(car$UsedOwnershipLength_.mo.)	# sample mean#
+		s <- sd(car$UsedOwnershipLength_.mo. )	# sample standard deviation#
+		margin <- qt(0.995,df=n-1)*s/sqrt(n)	# calculate margin of error#
+		# calculate bounds#
+			low <- xbar - margin#
+			high <- xbar + margin#
+			round(low, digits=2)#
+			round(high, digits = 2)
+n <- length(car$UsedOwnershipLength_.mo.)	# sample size#
+		xbar <- mean(car$UsedOwnershipLength_.mo.)	# sample mean#
+		s <- sd(car$UsedOwnershipLength_.mo. )	# sample standard deviation#
+		margin <- qt(0.995,df=n-1)*s/sqrt(n)	# calculate margin of error#
+		# calculate bounds#
+			low <- xbar - margin#
+			high <- xbar + margin#
+			round(low, digits=2)#
+			round(high, digits = 2)
+n
+xbar
+xbar <- mean(car$UsedOwnershipLength_.mo.)	# sample mean
+xbar
+car
+is.na_replace_0 <- car$UsedOwnershipLength_.mo.
+is.na_replace_0[is.na(is.na_replace_0)] <- 0
+car$UsedOwnershipLength_.mo.
+is.na_replace_0
+car$UsedOwnershipLength_.mo. <- is.na_replace_0
+car
+n <- length(car$UsedOwnershipLength_.mo.)	# sample size#
+		xbar <- mean(car$UsedOwnershipLength_.mo.)	# sample mean#
+		s <- sd(car$UsedOwnershipLength_.mo. )	# sample standard deviation#
+		margin <- qt(0.995,df=n-1)*s/sqrt(n)	# calculate margin of error#
+		# calculate bounds#
+			low <- xbar - margin#
+			high <- xbar + margin#
+			round(low, digits=2)#
+			round(high, digits = 2)#
+			# 99% confidence interval: (62.31, 97.03)
+UsedCar <- car$UsedOwnershipLength_.mo.
+is.na_remove <- car$UsedOwnershipLength_.mo.[!is.na(car$UsedOwnershipLength_.mo.)]
+is.na_remove
+is.na_remove <- cars$UsedOwnershipLength_.mo.[!is.na(cars$UsedOwnershipLength_.mo.)]
+is.na_remove
+UsedCar <- is.na_remove
+UsedCar
+n <- length(UsedCar)	# sample size#
+		xbar <- mean(UsedCar)	# sample mean#
+		s <- sd(UsedCar)	# sample standard deviation#
+		margin <- qt(0.995,df=n-1)*s/sqrt(n)	# calculate margin of error#
+		# calculate bounds#
+			low <- xbar - margin#
+			high <- xbar + margin#
+			round(low, digits=2)#
+			round(high, digits = 2)
+source("/Users/michaeladams/Code/R/Chapter 8/chapter_08_csv/ex08-80ghg.csv")
+emissions <- read.csv("/Users/michaeladams/Code/R/Chapter 8/chapter_08_csv/ex08-80ghg.csv")
+emissions
+emissions <- emissions$Emissions_.g.mi.
+emissions
+n <- length(emissions)	# sample size#
+	xbar <- mean(emissions)	# sample mean#
+	s <- sd(emissions)	# sample standard deviation#
+	margin <- qt(0.975,df=n-1)*s/sqrt(n)	# calculate margin of error#
+	# calculate bounds#
+		low <- xbar - margin#
+		high <- xbar + margin#
+		round(low, digits=2)#
+		round(high, digits = 2)
+source("/Users/michaeladams/Code/R/Chapter 8/chapter_08_csv/ex08-74pbl.csv")
+pbl <- read.csv("/Users/michaeladams/Code/R/Chapter 8/chapter_08_csv/ex08-74pbl.csv")
+pbl
+pbl <- pbl$Height_.m.
+n <- length(pbl)	# sample size#
+		xbar <- mean(pbl)	# sample mean#
+		s <- sd(pbl)	# sample standard deviation#
+		margin <- qt(0.975,df=n-1)*s/sqrt(n)	# calculate margin of error#
+		# calculate bounds#
+			low <- xbar - margin#
+			high <- xbar + margin#
+			round(low, digits=2)#
+			round(high, digits = 2)
